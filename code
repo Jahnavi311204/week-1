@@ -11,3 +11,15 @@ from sklearn.utils.class_weight import compute_class_weight  # Importing functio
 from tensorflow.keras.applications import EfficientNetV2B2  # Importing EfficientNetV2S model for transfer learning
 from sklearn.metrics import confusion_matrix, classification_report  # Importing functions to evaluate model performance
 import gradio as gr  # Importing Gradio for creating interactive web interfaces for machine learning models
+
+
+import numpy as np # linear algebra
+import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
+
+
+
+import os
+for dirname, _, filenames in os.walk('https://www.kaggle.com/datasets/farzadnekouei/trash-type-image-dataset'):
+    for filename in filenames:
+        print(os.path.join(dirname, filename))
+
